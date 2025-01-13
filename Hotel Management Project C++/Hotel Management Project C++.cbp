@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="Hotel Management Project C++" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/Hotel Management Project C++" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/Hotel Management Project C++" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="main.cpp" />
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
+    <!-- FileVersion specifies the compatibility with Code::Blocks versions -->
+    <FileVersion major="1" minor="6" />
+    <Project>
+        <!-- Project metadata -->
+        <Option title="Hotel Management Project C++" />
+        <Option pch_mode="2" /> <!-- Precompiled header mode -->
+        <Option compiler="gcc" /> <!-- Compiler used for the project -->
+
+        <!-- Build configurations -->
+        <Build>
+            <!-- Debug configuration -->
+            <Target title="Debug">
+                <Option output="bin/Debug/Hotel Management Project C++" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Debug/" /> <!-- Object file directory -->
+                <Option type="1" /> <!-- Target type: 1 = Console Application -->
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-g" /> <!-- Debugging symbols -->
+                </Compiler>
+            </Target>
+            <!-- Release configuration -->
+            <Target title="Release">
+                <Option output="bin/Release/Hotel Management Project C++" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Release/" /> <!-- Object file directory -->
+                <Option type="1" /> <!-- Target type: 1 = Console Application -->
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-O2" /> <!-- Optimization flag for release -->
+                </Compiler>
+                <Linker>
+                    <Add option="-s" /> <!-- Strip symbols for smaller binary -->
+                </Linker>
+            </Target>
+        </Build>
+
+        <!-- General compiler settings -->
+        <Compiler>
+            <Add option="-Wall" /> <!-- Enable all warnings -->
+            <Add option="-fexceptions" /> <!-- Enable exception handling -->
+        </Compiler>
+
+        <!-- Source files -->
+        <Unit filename="main.cpp" />
+
+        <!-- Extensions -->
+        <Extensions>
+            <!-- lib_finder helps manage libraries (disabled auto detection here) -->
+            <lib_finder disable_auto="1" />
+        </Extensions>
+    </Project>
 </CodeBlocks_project_file>
